@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>哒哒的个人主站</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap-maizi.css" />
+    <link rel="stylesheet" href="/stylesheets/animate.css" />
+    <style>
+        * {
+            font-size: 16px
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin-bottom: 30px;
+        }
+
+        .title_h2 {
+            color: yellow;
+            font-weight: 700;
+        }
+
+        .summary {
+            text-align: center;
+            font-size: 22px;
+            font-family: KaiTi, Arial, Helvetica, sans-serif
+        }
+
+        #bbs .ahref {
+            display: block;
+            cursor: pointer;
+            text-decoration: underline;
+            color: #337ab7
+        }
+    </style>
+</head>
+
+<body>
+    <!--导航-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">哒哒</a>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#home" class="current">个人简介</a>
+                    </li>
+                    <li>
+                        <a href="#bbs" class="">工作经验</a>
+                    </li>
+                    <li>
+                        <a href="#html5" class="">工作项目</a>
+                    </li>
+                    <li>
+                        <a href="#course" class="">练手demo</a>
+                    </li>
+                    <li>
+                        <a href="#app" class=""></a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="">留言版</a>
+                    </li>
+                </ul>
+            </div>
+            <!--导航-->
+
+        </div>
+    </nav>
+    <!--导航-->
+
+    <!--home-->
+    <section id="home">
+        <div class="lvjing">
+            <div class="container">
+                <div class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <h1>欢迎来到王逵的个人网页！</h1>
+                    <img src="images/timg.jpg" class=" avatar" alt="php">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class='title_h2'>工作经验</h2>
+                            <p class="summary">九真山社区（2014.7-2016.6）</p>
+                            <p class="summary">云里服务（2016.7-2017.4）</p>
+                            <p class="summary">悠然一指（2017.3-至今）</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class='title_h2'>项目经验</h2>
+                            <p class="summary">微信小程序,微信内嵌页面</p>
+                            <p class="summary">vue-element-admin后台管理</p>
+                            <p class="summary">vue制作微信内嵌页面</p>
+                            <p class="summary">react-native构建悠然一指App</p>
+                            <p class="summary">react-native构建圈乎App</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class='title_h2'>掌握技能</h2>
+                            <p class="summary">html,css,javascripts,jquery,vue,react</p>
+                            <p class="summary">ReactNative,webpack,nodejs,mongodb</p>
+                            <p class="summary">涉猎JavaSE,PHP,python,mysql,swagger,rap</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home-->
+
+    <!--bbs-->
+    <section id="bbs" style='padding:40px 0'>
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="0.5s">
+                <div class="col-md-12">
+                    <h1>工作项目--云里服务(可点击)</h1>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/a.png" class="img-responsive" alt="" />
+                    <h3>微信内嵌页面（jquery）</h3>
+                    <a class="ahref" href="http://lqb.yunlitech.com/index.php/Home/Coinpurse/index.html" target="_blank">手机充值、</a>
+                    <a class="ahref" href="http://lqb.yunlitech.com/Home/Gift/" target="_blank">生日礼品券、</a>
+                    <a class="ahref" href="http://lqb.yunlitech.com/index.php/Home/Member/index.html" target="_blank">会员办理</a>
+
+                </div>
+                <a href="/element" class="col-md-6" target="_blank">
+
+                    <img src="images/i.png" class="img-responsive" alt="" />
+                    <h3>vue+element+nodejs</h3>
+                    <p> ajax做登录拦截，vuex+cookie存储tokenRole,根据role动态挂载路由权限。</p>
+                    <p> 依赖element实现UI，自己通过nodejs+mongodb实现后台增删改查功能</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!--bbs-->
+
+    <!--html5-->
+    <section id="html5" style='padding:40px 0'>
+        <div class="col-md-12">
+            <h1 style='text-align:center;padding:20px 0'>悠然一指工作项目</h1>
+        </div>
+        <a href="/yryz" target="_blank" style='text-decoration:none'>
+            <div class="container">
+                <div class="col-md-6 wow fadeInLeft">
+                    <h2 style='color:#333'>悠然一指4.0,5.0迭代</h2>
+                    <p style='color:#666'>需要在模拟器上跑，所以截取了一些图片</p>
+                    <p style='color:#666'>
+                        <span class="glyphicon glyphicon-grain mai-icon"></span>
+                        负责首页模块，详情页模块开发，以及公共组件和类的封装
+                    </p>
+                    <p style='color:#666'>
+                        <span class="glyphicon glyphicon-grain mai-icon"></span>
+                        充分模块化，使用redux全局管理，以react-navigation路由
+                    </p>
+                </div>
+                <div class="col-md-6 wow fadeInRight">
+                    <img src="images/yryz/1.png" class="img-responsive" alt="" />
+                </div>
+            </div>
+        </a>
+    </section>
+    <!--html5-->
+
+    <!--bootstrap-->
+    <section id="bootstrap">
+        <div></div>
+        <a href="/quanhu" target="_blank" style='text-decoration:none'>
+            <div class="container wow fadeInUp">
+                <div class="col-md-6">
+                    <img src="images/quanhu/1.png" class="img-responsive" alt="" />
+                </div>
+                <div class="col-md-6">
+                    <h2 style='color:#333'>圈乎3.0迭代</h2>
+                    <p style='color:#666'>需要在模拟器上跑，所以截取了一些图片</p>
+                    <p style='color:#666'>
+                        <span class="glyphicon glyphicon-grain mai-icon"></span>
+                        负责首页和评论收藏点赞等逻辑，使用redux全局管理
+                    </p>
+                    <p style='color:#666'>
+                        <span class="glyphicon glyphicon-grain mai-icon"></span>
+                        充分熟悉react-native的api,熟悉nativebase,RNelement等UI库
+                    </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <!--bootstrap-->
+    <section id="bootstrap">
+        <a href="/music" target="_blank" style='text-decoration:none'>
+            <div class="container wow fadeInUp">
+                <div class="col-md-6">
+                    <h2 style='color:#333'>vue制作微信内嵌页面</h2>
+                    <p style='color:#666'>截取一部分做展示</p>
+                    <p style='color:#666'>
+                        <span class="glyphicon glyphicon-grain mai-icon"></span>
+
+                    </p>
+                    <p style='color:#666'>
+                        <span class="glyphicon glyphicon-grain mai-icon"></span>
+
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/vue.jpg" class="img-responsive" alt="" />
+                </div>
+            </div>
+        </a>
+    </section>
+    <!--course-->
+    <section id="course">
+        <div class="container">
+            <div class="row wow fadeIn" data-wow-delay="0.6s">
+                <div class="col-md-12">
+                    <h2>自学部分项目DEMO</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="course">
+                        <img src="images/student.jpg" class="img-responsive" alt="" style='margin:auto;height:180px' />
+                        <a href="/student" class="btn btn-primary" target="_blank" role="button">
+                            nodejs学生管理系统
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course">
+                        <img src="images/music.jpg" class="img-responsive" alt="" style='margin:auto;height:180px' />
+                        <a href="/music" class="btn btn-primary" target="_blank" role="button">
+                            vue制作的音乐播放器
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course">
+                        <img src="images/food.jpg" class="img-responsive" alt="" style='margin:auto;height:180px' />
+                        <a href="/food" class="btn btn-primary" target="_blank" role="button">
+                            vue快餐系统
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--course-->
+
+    <!--app-->
+    <!-- <section id="app">
+        <div class="container">
+            <div class="row  wow fadeInUp">
+                <div class="col-md-6">
+                    <h2>麦子学院移动APP下载</h2>
+                    <p>
+                        全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪儿都能开！
+                    </p>
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-download-alt"></span>
+                        iPhone版
+                    </button>
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-download-alt"></span>
+                        Android版
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/app-banner.jpg" class="img-responsive" alt="" />
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--app-->
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.singlePageNav.min.js"></script>
+    <script src="javascripts/wow.min.js"></script>
+    <script>
+        $(function () {
+            /*导航跳转效果插件*/
+            $('.nav').singlePageNav({
+                offset: 70
+            });
+            /*小屏幕导航点击关闭菜单*/
+            $('.navbar-collapse a').click(function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+            new WOW().init();
+        })
+    </script>
+
+</body>
+
+</html>

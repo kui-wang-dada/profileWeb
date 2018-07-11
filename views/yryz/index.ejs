@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .itemImg {
+            width: 202
+        }
+    </style>
+
+    <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            /*alert($("img").length)*/
+            var Column = 0;
+            fun(); /* 当打开窗口，自己先调用一次*/
+            $(window).resize(function (event) { /*调整窗口大小*/
+                fun();
+            });
+
+            function fun() {
+
+                Column = parseInt($(window).width() / 310);
+                /*用窗口的宽度/ 图片的宽度即可     就能算出列数来 别忘了取整*/
+                for (var i = 1; i < $("img").length; i++) {
+                    /*$("img").eq(i).css("left",i%3*192); 让盒子的索引号 取余 * 192  可以得到每个盒子的 left值。*/
+                    /* 需要一个累加器*/
+                    var num = 0; /* i=9*/
+                    for (var j = i - Column; j >= 1; j = j - Column) /*遍历top值*/ {
+                        num = num + $("img").eq(j).height() + 10;
+                    }
+                    $("img").eq(i).stop().animate({
+                        "left": (i - 1) % Column * 310,
+                        "top": num + 620
+                    }, 1500);
+                }
+            }
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <img src="/images/yryz/1.png" alt="" class='itemImg' width="1000" height="600">
+        <img src="/images/yryz/2.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/3.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/4.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/5.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/6.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/7.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/9.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/10.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/12.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/13.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/14.png" alt="" class='itemImg' width="300" height="600">
+        <img src="/images/yryz/15.png" alt="" class='itemImg' width="300" height="600">
+    </div>
+</body>
+
+</html>
